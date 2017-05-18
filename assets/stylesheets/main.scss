@@ -1,0 +1,45 @@
+@import "bootstrap";
+@import "variables-site";
+@import "reset-bootstrap";
+
+body {
+	background-color: $body-bg;
+	font-size: $text-color;
+	font-family: $font-family-sans-serif;
+	font-size: $font-size-base;
+}
+
+// Top
+
+.header-top {
+	background-color: $color-one;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	a {color: white;}
+
+	&-left {
+		@include make-md-column(6);
+		a {margin-right: 2em;}
+			i{margin-right: 1em;}
+	}
+
+	&-right {
+		@include make-md-column(6);
+		text-align: right;
+
+		&-login {
+			span {
+				margin-right: 1em;
+				margin-left: 1em;
+				color: white;
+			}
+		}
+
+	}
+
+}
+
+// Bottom
+.header-bottom {
+	background-color: $body-bg;
+}
